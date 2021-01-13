@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path="/" render={() => <PaletteList paletteList={seedPalettes}/>}/>
+        <Route exact path="/" render={(routeProps) => <PaletteList paletteList={seedPalettes} {...routeProps}/>}/>
         <Route 
           exact 
           path="/palette/:id" 
@@ -24,9 +24,6 @@ class App extends Component {
         />
         <Redirect to="/"></Redirect>
       </Switch>
-      // <div className="App">
-      //   <Palette palette={generatePalette(seedPalettes[4])}/>
-      // </div>
     )
   }
 }
