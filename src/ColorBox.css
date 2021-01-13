@@ -56,6 +56,14 @@
   width: 100%;
 }
 
+.light-text {
+  color: #fff;
+}
+
+.ColorBox .dark-text {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .see-more {
   background: rgba(255, 255, 255, 0.3);
   border: none;
