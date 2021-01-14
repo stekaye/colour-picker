@@ -12,11 +12,11 @@
   height: 50%;
 } */
 
-.ColorBox.go-back {
+/* .ColorBox.go-back {
   background-color: black;
-}
+} */
 
-.back-btn {
+/* .back-btn {
   background: rgba(255, 255, 255, 0.3);
   border: none;
   color: white;
@@ -33,7 +33,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   width: 90px;
-}
+} */
 
 /* .ColorBox:hover .copy-btn {
   opacity: 1;
