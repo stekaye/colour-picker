@@ -32,7 +32,15 @@ class App extends Component {
     return (
       <Switch>
         <Route exact path="/" render={(routeProps) => <PaletteList paletteList={this.state.palettes} {...routeProps}/>} />
-        <Route exact path="/palette/new" render={(routeProps) => <NewPaletteForm savePalette={this.savePalette} {...routeProps}/>} />
+        <Route 
+          exact 
+          path="/palette/new" 
+          render={(routeProps) => <NewPaletteForm 
+                                    savePalette={this.savePalette} 
+                                    palettes={this.state.palettes} 
+                                    {...routeProps}
+                                  />} 
+          />
         <Route 
           exact 
           path="/palette/:id" 
