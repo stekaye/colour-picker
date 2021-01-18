@@ -39,9 +39,6 @@ export default {
     position:'relative',
     width: '20%'
   },
-  delete: {
-    
-  },
   deleteIcon: {
     backgroundColor: "#eb3d30",
     color: "white",
