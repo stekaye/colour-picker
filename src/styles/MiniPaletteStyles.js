@@ -3,12 +3,13 @@ export default {
     backgroundColor: 'white',
     border: '1px solid black',
     borderRadius: '5px',
+    cursor: 'pointer',
     padding: '0.5rem',
     position: 'relative',
     overflow: 'hidden',
-    '&:hover' : {
-      cursor: 'pointer'
-    }
+    '&:hover svg': {
+      opacity: 1
+    },
   },
   colors: {
     backgroundColor: '#dae1e4',
@@ -37,5 +38,20 @@ export default {
     margin: '0 auto -3.5px',
     position:'relative',
     width: '20%'
+  },
+  delete: {
+    
+  },
+  deleteIcon: {
+    backgroundColor: "#eb3d30",
+    color: "white",
+    height: '16px',
+    opacity: 0,
+    padding: '8px',
+    position: 'absolute',
+    right: '0px',
+    top: '0px',
+    width: '16px',
+    zIndex: 10
   }
 }
