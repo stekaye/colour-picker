@@ -1,3 +1,5 @@
+import sizes from './sizes';
+
 export default {
   Palette: {
     display: 'flex',
@@ -17,6 +19,18 @@ export default {
     position: 'relative',
     textTransform: 'uppercase',
     width: '20%',
+    [sizes.down('lg')]: {
+      height: '33.3333%',
+      width: '25%'
+    },
+    [sizes.down('md')]: {
+      height: '20%',
+      width: '50%'
+    },
+    [sizes.down('xs')]: {
+      height: '10%',
+      width: '100%'
+    },
     '& a': {
       background: 'rgba(255, 255, 255, 0.3)',
       border: 'none',

@@ -15,7 +15,7 @@ export default {
       transition: '0.5s'
     },
     [sizes.down('lg')]: {
-      height: props => props.showingFullPalette ? '20%' : '40%',
+      height: props => props.showingFullPalette ? '20%' : '33.3333%',
       width: '25%',
     },
     [sizes.down('md')]: {
@@ -112,7 +112,10 @@ export default {
       padding: '1rem',
       textAlign: 'center',
       textShadow: '1px 2px black',
-      width: '100%'
+      width: '100%',
+      [sizes.down('xs')]: {
+        fontSize: '5rem',
+      }
     },
     '& p': {
       fontSize: '2rem',
