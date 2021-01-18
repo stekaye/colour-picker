@@ -119,14 +119,11 @@ class NewPaletteForm extends Component {
     this.setState({[evt.target.name]: evt.target.value})
   }
 
-  handleSubmit(newPaletteName) {
-    let newPalette = {
-      paletteName: newPaletteName,
-      colors: this.state.colors,
-      id: newPaletteName.toLowerCase().replace(/ /g, "-")
-    }
-    this.props.savePalette(newPalette)
-    this.props.history.push("/")
+  handleSubmit(newPalette) {
+    newPalette.colors = this.state.colors;
+    newPalette.id = newPalette.paletteName.toLowerCase().replace(/ /g, "-");
+    this.props.savePalette(newPalette);
+    this.props.history.push("/");
   }
 
   onSortEnd = ({oldIndex, newIndex}) => {
