@@ -11,6 +11,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import DraggableColorList from './DraggableColorList';
 import PaletteFormNav from './PaletteFormNav';
 import ColorPickerForm from './ColorPickerForm';
+import seedPalettes from './seedPalettes'
 import styles from './styles/NewPaletteFormStyles';
 
 class NewPaletteForm extends Component {
@@ -20,7 +21,7 @@ class NewPaletteForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      colors: this.props.palettes[0].colors,
+      colors: seedPalettes[0].colors,
       open: false,
     }
     this.handleDrawerOpen = this.handleDrawerOpen.bind(this);
