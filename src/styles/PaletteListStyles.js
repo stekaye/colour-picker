@@ -1,3 +1,5 @@
+import sizes from './sizes'
+
 export default {
   root: {
     alignItems: 'flex-start',
@@ -11,7 +13,13 @@ export default {
     display: 'flex',
     flexDirection: 'column',
     flexWrap: 'wrap',
-    width: '50%'
+    width: '50%',
+    [sizes.down('xl')]: {
+      width: '80%'
+    },
+    [sizes.down('xs')]: {
+      width: '75%'
+    }
   }, 
   nav: {
     alignItems: 'center',
@@ -27,8 +35,15 @@ export default {
   palettes: {
     boxSizing: 'border-box',
     display: 'grid',
-    gridGap: '5%',
+    gridGap: '2.5rem',
     gridTemplateColumns: 'repeat(3, 30%)',
-    width: '100%'
+    width: '100%',
+    [sizes.down('ms')]: {
+      gridTemplateColumns: 'repeat(2, 50%)',
+    },
+    [sizes.down('xs')]: {
+      gridGap: '1rem',
+      gridTemplateColumns: 'repeat(1, 100%)',
+    }
   }
 };
