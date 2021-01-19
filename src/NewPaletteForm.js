@@ -137,7 +137,7 @@ class NewPaletteForm extends Component {
 
             <ColorPickerForm 
               addNewColor={this.addNewColor}
-              colors={this.state.colors}
+              colors={colors}
               paletteIsFull={paletteIsFull}
               updateCurrentColor={this.updateCurrentColor} 
             />

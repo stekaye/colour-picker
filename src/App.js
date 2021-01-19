@@ -4,9 +4,9 @@ import {TransitionGroup, CSSTransition} from 'react-transition-group';
 import Page from './Page';
 import Palette from './Palette';
 import PaletteList from './PaletteList';
-import seedPalettes from './seedPalettes';
-import NewPaletteForm from './NewPaletteForm';
 import SingleColorPalette from './SingleColorPalette';
+import NewPaletteForm from './NewPaletteForm';
+import seedPalettes from './seedPalettes';
 import {generatePalette} from './colorHelpers';
 
 class App extends Component {

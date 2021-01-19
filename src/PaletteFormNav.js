@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
@@ -29,7 +28,8 @@ class PaletteFormNav extends Component {
   }
 
   render() {
-    const {classes, open, palettes, handleSubmit} = this.props;
+    const {classes, open, palettes, handleSubmit, handleDrawerOpen} = this.props;
+    const {formShowing} = this.props
     return (
       <div className={classes.root}>
         {/* <CssBaseline /> */}
@@ -44,7 +44,7 @@ class PaletteFormNav extends Component {
             <IconButton
               color="inherit"
               aria-label="open drawer"
-              onClick={this.props.handleDrawerOpen}
+              onClick={handleDrawerOpen}
               edge="start"
               className={clsx(classes.menuButton, open && classes.hide)}
             >
@@ -64,7 +64,7 @@ class PaletteFormNav extends Component {
             </div>
         </AppBar>
 
-        {this.state.formShowing && <PaletteMetaForm palettes={palettes} handleSubmit={handleSubmit} hideForm={this.hideForm}/>}
+        {formShowing && <PaletteMetaForm palettes={palettes} handleSubmit={handleSubmit} hideForm={this.hideForm}/>}
 
       </div>
     )
