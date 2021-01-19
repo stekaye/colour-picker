@@ -2,6 +2,15 @@ import sizes from './sizes'
 import bg from './bg.svg';
 
 export default {
+  '@global': {
+    ".fade-exit": {
+      opacity: 1
+    },
+    ".fade-exit-active": {
+      opacity: 0,
+      transition: 'opacity 500ms ease-out'
+    }
+  },
   root: {
     alignItems: 'flex-start',
     backgroundColor: '#08375b',
@@ -30,7 +39,7 @@ export default {
     color: 'white',
     display: 'flex',
     justifyContent: 'space-between',
-    width: '100%',
+    width: '97%',
     '& a': {
       color: 'white',
       textDecoration: 'none'
