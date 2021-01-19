@@ -14,7 +14,7 @@ export default {
   colors: {
     backgroundColor: '#dae1e4',
     borderRadius: '5px',
-    height: '100px',
+    height: '120px',
     overflow: 'hidden',
     width: '100%'
   },

@@ -22,7 +22,7 @@ export default {
     overflow: 'scroll'
   },
   container: {
-    alignItems: 'flex-start',
+    alignItems: 'center',
     display: 'flex',
     flexDirection: 'column',
     flexWrap: 'wrap',
@@ -50,6 +50,7 @@ export default {
     display: 'grid',
     gridGap: '2.5rem',
     gridTemplateColumns: 'repeat(3, 30%)',
+    marginBottom: '1rem',
     width: '100%',
     [sizes.down('md')]: {
       gridTemplateColumns: 'repeat(2, 50%)',
