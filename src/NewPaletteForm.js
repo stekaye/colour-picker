@@ -152,6 +152,8 @@ class NewPaletteForm extends Component {
           <div className={classes.drawerHeader} />
             <DraggableColorList 
               colors={colors} 
+              distance={20}
+              //Not counted as drag unless dragged more than 20px. Prevents bug with delete sometimes not triggering.
               deleteColor={this.deleteColor}
               axis='xy'
               onSortEnd={this.onSortEnd}
